@@ -1,0 +1,14 @@
+{
+  // Schema for editor autocompletion
+  "$schema": "https://opencode.ai/config.json",
+  "compaction": {
+    "prune": false // keep all messages
+  },
+  "mcp": {
+    "context7": {
+      "type": "remote",
+      "url": "https://mcp.context7.com/mcp",
+      "enabled": true
+    }
+  }
+}
