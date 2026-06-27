@@ -43,7 +43,7 @@ describe('runUninstall', () => {
       mcp: {
         'jobly-mcp': {
           type: 'remote',
-          url: 'http://localhost:3000/api/mcp',
+          url: 'https://jobly.ai.vn/api/mcp',
           enabled: true,
           headers: { Authorization: 'Bearer jobly_sk_test1234567890123456' },
         },
@@ -85,7 +85,7 @@ describe('runUninstall', () => {
       '  // my comment',
       '  "$schema": "https://opencode.ai/config.json",',
       '  "mcp": {',
-      '    "jobly-mcp": { "type": "remote", "url": "http://localhost:3000/api/mcp", "enabled": true, "headers": { "Authorization": "Bearer jobly_sk_test1234567890123456" } }',
+      '    "jobly-mcp": { "type": "remote", "url": "https://jobly.ai.vn/api/mcp", "enabled": true, "headers": { "Authorization": "Bearer jobly_sk_test1234567890123456" } }',
       '  }',
       '}',
     ].join('\n'));

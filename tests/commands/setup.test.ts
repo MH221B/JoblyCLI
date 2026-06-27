@@ -71,7 +71,7 @@ describe('runSetup', () => {
       mcp: {
         'jobly-mcp': {
           type: 'remote',
-          url: 'http://localhost:3000/api/mcp',
+          url: 'https://jobly.ai.vn/api/mcp',
           enabled: true,
           headers: { Authorization: 'Bearer jobly_sk_oldkey00000000000000' },
         },
@@ -90,7 +90,7 @@ describe('runSetup', () => {
       mcp: {
         'jobly-mcp': {
           type: 'remote',
-          url: 'http://localhost:3000/api/mcp',
+          url: 'https://jobly.ai.vn/api/mcp',
           enabled: true,
           headers: { Authorization: 'Bearer jobly_sk_oldkey00000000000000' },
         },
@@ -131,7 +131,7 @@ describe('runSetup', () => {
     const configPath = path.join(tmp, 'opencode.json');
     fs.writeFileSync(configPath, JSON.stringify({
       $schema: 'https://opencode.ai/config.json',
-      mcp: { 'jobly-mcp': { type: 'remote', url: 'http://localhost:3000/api/mcp', enabled: true, headers: { Authorization: 'Bearer old' } } },
+      mcp: { 'jobly-mcp': { type: 'remote', url: 'https://jobly.ai.vn/api/mcp', enabled: true, headers: { Authorization: 'Bearer old' } } },
     }, null, 2));
     vi.mocked(promptOverwrite).mockResolvedValueOnce(false);
     const exitSpy = vi.spyOn(process, 'exit').mockImplementation((code) => { throw new Error(`EXIT:${code}`); });

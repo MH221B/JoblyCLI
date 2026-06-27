@@ -15,7 +15,7 @@ export type OpenCodeConfig = {
 };
 
 export const JOBLY_MCP_KEY = 'jobly-mcp' as const;
-export const JOBLY_MCP_URL = 'http://localhost:3000/api/mcp' as const;
+export const JOBLY_MCP_URL = 'https://jobly.ai.vn/api/mcp' as const;
 export const OPENCODE_SCHEMA_URL = 'https://opencode.ai/config.json' as const;
 
 export function buildJoblyMcpEntry(apiKey: string): McpServerEntry {
