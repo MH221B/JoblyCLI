@@ -1,7 +1,7 @@
 {
   "name": "jobly-mcp",
-  "version": "0.1.0",
-  "description": "Setup JoblyAI MCP server in your OpenCode config",
+  "version": "2.0.0",
+  "description": "Setup JoblyAI MCP server in your OpenCode, Claude Code, or Codex CLI config",
   "type": "module",
   "bin": {
     "jobly-mcp": "./dist/cli.js"
@@ -29,10 +29,14 @@
     "mcp",
     "model-context-protocol",
     "opencode",
+    "claude",
+    "claude-code",
+    "codex",
     "cli"
   ],
   "scripts": {
     "build": "tsup",
+    "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
@@ -42,6 +46,7 @@
     "@inquirer/prompts": "^8.5.2",
     "commander": "^15.0.0",
     "picocolors": "^1.1.1",
+    "smol-toml": "^1.7.0",
     "strip-json-comments": "^5.0.3"
   },
   "devDependencies": {
