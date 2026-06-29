@@ -5,14 +5,14 @@ export async function promptScope(): Promise<'global' | 'local'> {
     message: 'Where should the config be installed?',
     choices: [
       {
-        name: 'Global (~/.config/opencode/)',
+        name: 'Global (user home)',
         value: 'global' as const,
-        description: 'Available in all projects on this machine',
+        description: 'Available across all projects on this machine',
       },
       {
         name: 'Local (current project)',
         value: 'local' as const,
-        description: 'Written to the nearest git root as opencode.json',
+        description: 'Scoped to the nearest git project',
       },
     ],
   });
