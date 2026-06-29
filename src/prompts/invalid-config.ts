@@ -1,8 +1,8 @@
 import { select } from '@inquirer/prompts';
 
-export async function promptInvalidConfigAction(): Promise<'abort' | 'backup'> {
+export async function promptInvalidConfigAction(fileLabel: string): Promise<'abort' | 'backup'> {
   return select({
-    message: 'opencode.json contains invalid JSON. What do you want to do?',
+    message: `${fileLabel} contains invalid content. What do you want to do?`,
     choices: [
       {
         name: 'Abort (recommended)',
