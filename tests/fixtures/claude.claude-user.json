@@ -1,0 +1,7 @@
+{
+  "numStartups": 42,
+  "mcpServers": {
+    "old": { "type": "http", "url": "https://old.example.com" }
+  },
+  "oauthAccount": { "accountId": "abc" }
+}

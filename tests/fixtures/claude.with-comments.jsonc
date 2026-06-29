@@ -1,0 +1,6 @@
+{
+  // team shared server
+  "mcpServers": {
+    "nx": { "command": "nx" }
+  }
+}
