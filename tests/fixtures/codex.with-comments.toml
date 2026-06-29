@@ -1,0 +1,5 @@
+# codex config
+approval_policy = "untrusted"
+
+[mcp_servers.docs]
+command = "docs-server" # stdio server

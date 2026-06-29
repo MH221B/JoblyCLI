@@ -1,0 +1,5 @@
+approval_policy = "on-request"
+
+[mcp_servers.docs]
+command = "docs-server"
+args = ["--stdio"]
